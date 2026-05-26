@@ -56,7 +56,7 @@ const initialFeatures = {
   Misc: true,
 };
 
-function Toggle({ enabled, onClick }) {
+function Toggle({ enabled, onClick }: any) {
   return (
     <button
       onClick={onClick}
@@ -67,7 +67,7 @@ function Toggle({ enabled, onClick }) {
   );
 }
 
-function SliderRow({ label, value, onChange, min = 0, max = 100 }) {
+function SliderRow({ label, value, onChange, min = 0, max = 100 }: any) {
   return (
     <div className="space-y-3">
       <div className="flex justify-between text-sm text-zinc-300">
@@ -89,7 +89,7 @@ function SliderRow({ label, value, onChange, min = 0, max = 100 }) {
   );
 }
 
-function SettingsPanel({ title, subtitle, children }) {
+function SettingsPanel({ title, subtitle, children }: any) {
   return (
     <Card className="border-white/10 bg-black/80 text-white">
       <CardContent className="p-7">
