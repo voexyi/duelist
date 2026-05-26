@@ -80,7 +80,7 @@ function SliderRow({ label, value, onChange, min = 0, max = 100 }) {
         max={max}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="duelist-slider w-full cursor-pointer accent-red-600"
+        className="w-full"
       />
       <div className="h-2 overflow-hidden rounded-full bg-white/10">
         <div className="h-full rounded-full bg-red-600 transition-all" style={{ width: `${value}%` }} />
